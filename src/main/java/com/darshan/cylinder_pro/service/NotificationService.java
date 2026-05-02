@@ -22,11 +22,11 @@ public class NotificationService {
 
     @Autowired
     private CylinderService cylinderService;
-
+    
     // Cron expression for 9:00 AM every day
 //    @Scheduled(cron = "0 0 9 * * *")
 //    @Scheduled(cron = "0 0 8 * * *")
-   @Scheduled(cron = "${NOTIFICATION_TIME}", zone = "Asia/Kolkata")
+   @Scheduled(cron = "0 42 14 * * *", zone = "Asia/Kolkata")
     public void runDailyCheck() {
         List<String> allUsers = repo.findAllUniqueDeviceTokens();
 
