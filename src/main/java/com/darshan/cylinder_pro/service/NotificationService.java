@@ -26,7 +26,7 @@ public class NotificationService {
     // Cron expression for 9:00 AM every day
 //    @Scheduled(cron = "0 0 9 * * *")
 //    @Scheduled(cron = "0 0 8 * * *")
-   @Scheduled(cron = "0 31 22 * * *", zone = "Asia/Kolkata")
+   @Scheduled(cron = "0 36 22 * * *", zone = "Asia/Kolkata")
     public void runDailyCheck() {
         List<String> allUsers = repo.findAllUniqueDeviceTokens();
 
